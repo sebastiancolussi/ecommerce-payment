@@ -1,0 +1,90 @@
+@import "./variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  //   background-color: green;
+}
+
+body {
+  background-image: url("/img/background.jpg");
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.payment-container {
+  background-color: $primary-color;
+  border-radius: 5px;
+  margin-top: 100px;
+}
+
+.payment-method-container {
+  padding: 20px 70px 25px 70px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  margin-top: 4px;
+  margin-left: 20px;
+  color: darkgrey;
+  font-size: 16px;
+}
+
+.visa,
+.mastercard,
+.maestro,
+.button-next-step {
+  padding: 15px;
+  margin-left: 10px;
+  display: flex;
+}
+
+.black {
+  color: black;
+}
+
+img {
+  width: 50px;
+}
+
+.check {
+  margin-left: auto;
+  width: 25px;
+}
+
+.button-next-step {
+  background-color: $secondary-color;
+  color: $primary-color;
+  font-size: 15px;
+  outline: none;
+  border: none;
+
+  & .arrow {
+    width: 15px;
+    margin-top: 5px;
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  background-color: #598bdd;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.last-hr {
+  color: darkgray;
+  border: 0px;
+}
+
+span {
+  text-align: center;
+  margin-right: 5px;
+  padding: 4px;
+}
